@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Fonts/Poppins fonts.css">
+
+    <style>
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'poppins';
+}
+body
+{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/bg.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.main
+{
+    width: 100%;
+}
+.navigation
+{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+    /* background-color: aqua; */
+}
+.navigation .logo
+{
+    width: 120px;
+    height: 120px;
+}
+.navigation .logo img
+{
+    width: 100%;
+}
+.nav-menu ul
+{
+    display: flex;
+}
+.nav-menu ul li
+{
+    padding: 0px 25px;
+    font-weight: bold;
+}
+.nav-menu ul li a
+{
+    color: white;
+}
+.nav-menu a::after
+{
+    content: '';
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: auto    ;
+    background-color: red;
+}
+.nav-menu a:hover::after
+{
+    transition: all 0.4s;
+    width: 100%;
+}
+.content
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+.content h1
+{
+    font-size: 42px;
+    color: white;
+    margin-bottom: 25px;
+}
+.content p
+{
+    color: rgb(218, 218, 218);
+    font-size: 22px;
+    /* margin-bottom: 10px; */
+}
+.content .btn
+{
+    padding: 10px 20px;
+    width: 260px;
+    margin: 20px auto;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s;
+}
+.btn a
+{
+    color: white;
+}
+.btn:hover
+{
+    background-color: rgb(187, 4, 4);
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.section
+{
+    height: 100px;
+    width: 100px;
+}
+.content2
+{
+    height: 100%;
+    width: 100%;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navigation">
+            <div class="logo">
+                <img src="img/Logo.png" alt="">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Biggets IT Center</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur mollitia obcaecati cumque molestias excepturi voluptas quis porro fugit esse sed adipisci!</p>
+            <div class="btn"><a href="#">Visit to Know More Details</a></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content2">
+             <p>our course</p>
+        </div>
+    </div>
+</body>
+</html>
